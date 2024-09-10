@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gerar Texto</title>
+  
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+  <div id="loginContainer">
+
+    <form id="loginForm">
+      <label for="loginUser">Usuário:</label>
+      <input type="text" id="loginUser" placeholder="Digite seu usuário">
+      <br>
+      <label for="loginPassword">Senha:</label>
+      <input type="password" id="loginPassword" placeholder="Digite sua senha">
+      <br>
+      <button type="button" id="loginButton">Entrar</button>
+    </form>
+  </div>
+
+  <div id="formContainer" style="display: none;">
+    <div id="tabs">
+      <button class="tab_btt" id="registrarProposta">Registrar Proposta</button>
+      <button class="tab_btt" id="registrarEfetivacao">Efetivação</button>
+    </div>
+    <div id="criarPropostaDiv">
+      <!-- <img src="marca.png" alt="Logo" id="logo" /> -->
+      <form id="infoForm">
+        <div class="form-group">
+          <label for="name">SEGURADO:</label>
+          <input type="text" id="name" placeholder="Digite seu nome">
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-MAIL PARA CONTATO:</label>
+          <input type="email" id="email" placeholder="Digite seu e-mail">
+        </div>
+
+        <div class="flex-group">
+          <div class="form-group">
+            <label for="phone1">TELEFONE 1:</label>
+            <input type="tel" id="phone1" placeholder="Digite seu telefone 1">
+          </div>
+          <div class="form-group">
+            <label for="phone2">TELEFONE 2:</label>
+            <input type="tel" id="phone2" placeholder="Digite seu telefone 2">
+          </div>
+        </div>
+
+        <div id="operationCodeContainer" class="form-group">
+          <label for="operationCode">CÓDIGO DE OPERAÇÃO (%):</label>
+          <input type="number" id="operationCode" placeholder="Digite o código de operação">
+          <input type="text" id="operationCodeComplement" placeholder="Complemento do Código de operação">
+        </div>
+
+        <div class="flex-group">
+          <div class="form-group">
+            <label for="productionGroup">ANALISTA:</label>
+            <input type="text" id="productionGroup" placeholder="Analista / Loja">
+          </div>
+
+          <div class="form-group">
+            <label for="paymentMethod">FORMA DE PAGAMENTO:</label>
+            <select id="paymentMethod">
+              <option value="Cartão de Crédito">CARTÃO DE CRÉDITO</option>
+              <option value="Boleto Bancário">BOLETO BANCÁRIO</option>
+              <option value="Débito em Conta">DÉBITO EM CONTA</option>
+              <option value="PIX">PIX</option>
+              <option value="Transferência Bancária">TRANSFERÊNCIA BANCÁRIA</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="installments">PARCELAS:</label>
+            <select id="installments">
+              <option value="1">1X</option>
+              <option value="2">2X</option>
+              <option value="3">3X</option>
+              <option value="4">4X</option>
+              <option value="5">5X</option>
+              <option value="6">6X</option>
+              <option value="7">7X</option>
+              <option value="8">8X</option>
+              <option value="9">9X</option>
+              <option value="10">10X</option>
+              <option value="11">11X</option>
+              <option value="12">12X</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="flex-group">
+          <div class="form-group">
+            <label for="contractType">TIPO DE SEGURO:</label>
+            <select id="contractType">
+              <option value="NOVO">NOVO</option>
+              <option value="ENDOSSO">ENDOSSO</option>
+              <option value="RENOVAÇÃO">RENOVAÇÃO</option>
+              <option value="RENOVACAO-CONGENERE">RENOVAÇÃO CONGENERE</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="insuranceType">TIPO DE CONTRATAÇÃO:</label>
+            <select id="insuranceType">
+              <option value="EMPRESARIAL">SEGURO EMPRESARIAL</option>
+              <option value="RESIDENCIAL">SEGURO RESIDENCIAL</option>
+              <option value="AUTOMOVEL">SEGURO AUTOMÓVEL</option>
+              <option value="VIDA">SEGURO DE VIDA</option>
+              <option value="SAUDE">SEGURO SAÚDE</option>
+              <option value="ACIDENTES-PESSOAIS">SEGURO DE ACIDENTES PESSOAIS</option>
+              <option value="VIAGEM">SEGURO VIAGEM</option>
+              <option value="RESPONSABILIDADE-CIVIL">SEGURO DE RESPONSABILIDADE CIVIL</option>
+              <option value="FIANCA-LOCATICIA">SEGURO FIANÇA LOCATÍCIA</option>
+              <option value="EQUIPAMENTOS">SEGURO DE EQUIPAMENTOS</option>
+              <option value="TRANSPORTE">SEGURO DE TRANSPORTE</option>
+              <option value="AGRICOLA">SEGURO AGRÍCOLA</option>
+              <option value="OBRAS">SEGURO DE OBRAS</option>
+              <option value="CREDITO">SEGURO DE CRÉDITO</option>
+              <option value="GARANTIA">SEGURO DE GARANTIA</option>
+              <option value="PREVIDENCIA-PRIVADA">SEGURO PREVIDÊNCIA PRIVADA</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" id="generateButton">Gerar Texto e Gravar</button>
+          <button type="button" id="logoutButton">Sair</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="flex-group">
+      <div id="efetivacao">
+        <form id="infoForm">
+          <div class="flex-group">
+            <!-- Campo do Prêmio -->
+            <div class="form-group">
+              <label for="premio">Prêmio:</label>
+              <input type="text" id="premio" placeholder="Digite o prêmio">
+            </div>
+      
+            <!-- Campo da Loja -->
+            <div class="form-group">
+              <label for="loja">Loja:</label>
+              <select id="loja">
+                <option value="TERRA_FERTIL">TERRA FERTIL</option>
+                <option value="MAQCAMPO">MAQCAMPO</option>
+              </select>
+            </div>
+          </div>
+      
+          <!-- Botão verde para enviar -->
+          <button type="button" id="enviar_whatsapp" class="btn-green">Enviar no grupo</button>
+        </form>
+      </div>
+      
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

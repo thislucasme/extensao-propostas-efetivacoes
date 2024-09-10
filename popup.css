@@ -1,0 +1,170 @@
+/* popup.css */
+
+/* Estilização geral do corpo */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container do login */
+#loginContainer {
+  width: 350px; /* Aumente a largura do container de login */
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Inclui padding e border no width */
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#loginForm label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+ /* Garante que o input ocupe a largura total */
+}
+
+#loginButton {
+  background: #28a745;
+  color: #fff;
+  width: 100%;
+}
+
+
+
+#loginButton:hover {
+  background: #0056b3;
+}
+
+/* Container do formulário principal */
+#formContainer {
+  width: 500px; /* Aumente a largura do container do formulário */
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Inclui padding e border no width */
+}
+
+#infoForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="number"],
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Inclui padding e border no width */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="number"]:focus,
+.form-group select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.flex-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#generateButton {
+  background: #28a745;
+  color: #fff;
+  width: 100%; /* Garante que o botão ocupe a largura total */
+}
+
+#generateButton:hover {
+  background: #218838;
+}
+
+#logoutButton {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#logoutButton:hover {
+  text-decoration: underline;
+}
+
+#logo {
+  width: 70px; /* Ajuste o tamanho conforme necessário */
+  display: block;
+  margin: 0 auto 20px; /* Centraliza a logo e adiciona espaço inferior */
+}
+
+
+
+#efetivacao {
+  display: none;
+}
+
+.tab_btt {
+  background-color: white;
+}
+
+.btn-green {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.btn-green:hover {
+  background-color: darkgreen;
+}

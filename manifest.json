@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Terra Fértil",
+  "version": "1.0",
+  "permissions": ["clipboardWrite", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://mail.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "Logo.png",
+      "48": "Logo.png",
+      "128": "Logo.png"
+    }
+  }
+}
