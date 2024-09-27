@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Gerar Texto</title>
-  
+
   <link rel="stylesheet" href="popup.css">
 </head>
 
@@ -28,6 +28,7 @@
       <button class="tab_btt" id="registrarProposta">Registrar Proposta</button>
       <button class="tab_btt" id="registrarEfetivacao">Efetivação</button>
     </div>
+    
     <div id="criarPropostaDiv">
       <!-- <img src="marca.png" alt="Logo" id="logo" /> -->
       <form id="infoForm">
@@ -134,34 +135,18 @@
         </div>
       </form>
     </div>
-
-    <div class="flex-group">
-      <div id="efetivacao">
-        <form id="infoForm">
-          <div class="flex-group">
-            <!-- Campo do Prêmio -->
-            <div class="form-group">
-              <label for="premio">Prêmio:</label>
-              <input type="text" id="premio" placeholder="Digite o prêmio">
-            </div>
-      
-            <!-- Campo da Loja -->
-            <div class="form-group">
-              <label for="loja">Loja:</label>
-              <select id="loja">
-                <option value="TERRA_FERTIL">TERRA FERTIL</option>
-                <option value="MAQCAMPO">MAQCAMPO</option>
-              </select>
-            </div>
-          </div>
-      
-          <!-- Botão verde para enviar -->
-          <button type="button" id="enviar_whatsapp" class="btn-green">Enviar no grupo</button>
-        </form>
-      </div>
-      
-  </div>
-  <script src="popup.js"></script>
+<BR/>
+<div class="form-group">
+    <div id="efetivacao">
+      <form id="infoForm">
+        <label for="premio">Prêmio:</label>
+        <input type="text" id="premio" placeholder="Digite o prêmio">
+        <br/>
+      <button type="button" id="enviar_whatsapp" class="btn-green">Enviar no grupo</button>
+      </form>
+    </div>
+</div>
+    <script src="popup.js"></script>
 </body>
 
 </html>

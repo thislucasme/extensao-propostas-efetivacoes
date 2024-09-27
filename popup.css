@@ -15,11 +15,11 @@ body {
 
 /* Container do login */
 #loginContainer {
-  width: 350px; /* Aumente a largura do container de login */
-  padding: 20px;
+  width: 300px; /* Diminuído a largura do container de login */
+  padding: 15px; /* Reduzido o padding */
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box; /* Inclui padding e border no width */
 }
 
@@ -29,26 +29,26 @@ body {
 }
 
 #loginForm label {
-  margin-bottom: 5px;
+  margin-bottom: 4px; /* Reduzido o espaçamento */
   font-weight: bold;
 }
 
 #loginForm input[type="text"],
 #loginForm input[type="password"] {
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 8px; /* Reduzido o padding */
+  margin-bottom: 8px; /* Reduzido o espaçamento entre campos */
   border: 1px solid #ccc;
   border-radius: 4px;
- /* Garante que o input ocupe a largura total */
+  box-sizing: border-box; /* Garante que o input ocupe a largura total */
 }
 
 #loginButton {
   background: #28a745;
   color: #fff;
   width: 100%;
+  padding: 8px; /* Reduzido o padding */
+  font-size: 14px; /* Reduzido o tamanho da fonte */
 }
-
-
 
 #loginButton:hover {
   background: #0056b3;
@@ -56,11 +56,11 @@ body {
 
 /* Container do formulário principal */
 #formContainer {
-  width: 500px; /* Aumente a largura do container do formulário */
-  padding: 20px;
+  width: 400px; /* Diminuído a largura do container do formulário */
+  padding: 15px; /* Reduzido o padding */
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box; /* Inclui padding e border no width */
 }
 
@@ -70,12 +70,12 @@ body {
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 10px; /* Reduzido o espaçamento entre grupos de campos */
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 4px; /* Reduzido o espaçamento */
   font-weight: bold;
 }
 
@@ -85,7 +85,7 @@ body {
 .form-group input[type="number"],
 .form-group select {
   width: 100%;
-  padding: 10px;
+  padding: 8px; /* Reduzido o padding */
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box; /* Inclui padding e border no width */
@@ -103,7 +103,7 @@ body {
 .flex-group {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px; /* Reduzido o espaço entre itens */
 }
 
 .form-actions {
@@ -112,17 +112,19 @@ body {
 }
 
 button {
-  padding: 10px;
+  padding: 8px; /* Reduzido o padding */
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px; /* Reduzido o tamanho da fonte */
 }
 
 #generateButton {
   background: #28a745;
   color: #fff;
   width: 100%; /* Garante que o botão ocupe a largura total */
+  padding: 8px; /* Reduzido o padding */
+  font-size: 14px; /* Reduzido o tamanho da fonte */
 }
 
 #generateButton:hover {
@@ -134,7 +136,7 @@ button {
   border: none;
   color: #007bff;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px; /* Reduzido o tamanho da fonte */
 }
 
 #logoutButton:hover {
@@ -142,12 +144,10 @@ button {
 }
 
 #logo {
-  width: 70px; /* Ajuste o tamanho conforme necessário */
+  width: 60px; /* Diminuído o tamanho da logo */
   display: block;
-  margin: 0 auto 20px; /* Centraliza a logo e adiciona espaço inferior */
+  margin: 0 auto 15px; /* Reduzido o espaço inferior */
 }
-
-
 
 #efetivacao {
   display: none;
@@ -158,13 +158,14 @@ button {
 }
 
 .btn-green {
-  background-color: green;
+  background-color: #28a745;
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 8px 12px; /* Reduzido o padding */
   cursor: pointer;
+  font-size: 14px; /* Reduzido o tamanho da fonte */
 }
 
 .btn-green:hover {
-  background-color: darkgreen;
+  background-color: #209e3e;
 }

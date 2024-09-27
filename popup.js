@@ -1,3 +1,4 @@
+document.getElementById('efetivacao').style.display = 'none';
 var value = undefined
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -162,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("enviar_whatsapp").addEventListener("click", function() {
     var valorPremio = document.getElementById('premio').value.toUpperCase();
     //var operationCodeComplement = document.getElementById('operationCodeComplement').value.toUpperCase();
-    var loja = document.getElementById('loja').value.toUpperCase();
+    var loja = "VAZIO"
 
 
     const analystId = localStorage.getItem('analystId'); // Obtém o ID do analista logado
